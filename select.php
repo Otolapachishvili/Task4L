@@ -1,14 +1,5 @@
 <?php 
-	$server="localhost";
-	$username="root";
-	$password="";
-	$db="week1_m19";
-
-	$conn= new mysqli($server,$username,$password,$db);
-	if ($conn->connect_error) {
-		die("connection failed");
-
-	}
+	require_once("db.php");
 	$sql="SELECT * FROM `users` WHERE 1";
 	$result=$conn->query($sql);
 	while ($row=$result->fetch_assoc()) { 
