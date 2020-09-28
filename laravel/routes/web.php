@@ -23,12 +23,7 @@ Route::get("/gettest", function() {
 });
 Route::post("/test",function(Request $req){
 	$data=[
-		[
 			"name"=>$req->post()["name"]
-		],
-		[
-			"name"=>"giorgi"
-		],
 
 	];
 	// return $data;

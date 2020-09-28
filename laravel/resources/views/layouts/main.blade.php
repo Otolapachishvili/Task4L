@@ -11,8 +11,8 @@
 
     <!-- web-fonts -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500' rel='stylesheet' type='text/css'>
-
-    <!-- Bootstrap -->
+    @yield("seo")
+    
     <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
 
     <!-- font-awesome -->
