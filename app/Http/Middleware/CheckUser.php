@@ -15,7 +15,7 @@ class CheckUser
      */
     public function handle($request, Closure $next)
     {
-        if (Can_post::firstOrFail()["can_post"]==0) {
+        if (Can_post::firstOrFail()["title"]==0) {
             return redirect()->route("toredirect");
             exit();
         };
